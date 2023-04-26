@@ -22,7 +22,7 @@ public class Steps {
   public void selecione_o_botao_abrir_nova_conta() throws Throwable {
   m.click(e.getBtnAbrirConta(),"selecionando botao abrir conta");  
   m.pausa(3000,"pausa para carregar o botao abrir conta");
-
+  m.click(e.getBtnAbrirConta(),"selecionando botao abrir conta");
   }
 
   @Given("^selecionar o botao abrir conta para voce$")
@@ -34,7 +34,7 @@ public class Steps {
   @When("^o usuario preencher o formulario$")
   public void o_usuario_preencher_o_formulario() throws Throwable {
   m.preencher(e.getNomeCompleto(), "anderson", "preenchendo o campo nome");      
-  m.preencher(e.getTelefone(),"222222222", "preenchendo o campo telefone"); 
+  m.preencher(e.getTelefone(),"47965796610", "preenchendo o campo telefone"); 
   m.preencher(e.getEmail(), "anderson@gemail.com" , "preenchendo o campo email"); 
   m.preencher(e.getCpf(), "18040916003" , "preenchendop o camp cpf"); 
   

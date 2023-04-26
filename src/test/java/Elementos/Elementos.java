@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 public class Elementos {
 	
-private By btnAbrirConta = By.cssSelector("body > div.viewport-primary > nav.nav-desktop > div.right > div.nav-item.nav-item-nova-conta > a"); 
+private By btnAbrirConta = By.xpath("//a[@rel='abrir-nova-conta_desktop'][normalize-space()='Abrir nova conta']"); 
 private By btnParaVoce = By.id("bt1");
 private By nomeCompleto = By.id("nome");
 private By telefone = By.id("telefone");
@@ -38,3 +38,5 @@ public By getFaltaPouco() {
 }
 
 }
+
+
